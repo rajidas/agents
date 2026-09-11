@@ -1,0 +1,156 @@
+Ecommerce Prompt:
+
+Create a production-ready Angular ecommerce application for products,
+categories, inventory, customers, orders, cart, checkout, payments, coupons,
+and reports.
+
+Use Angular standalone components, Angular Router, Angular Material, Signals,
+RxJS, strict TypeScript, JWT authentication, lazy loading, and responsive
+accessible UI.
+
+Use mock JSON data initially. Include working search, filtering, sorting,
+pagination, cart updates, checkout validation, order creation, and admin CRUD
+for products, categories, inventory, and coupons.
+
+Follow the enterprise discovery process. Read this entire prompt first and do
+not repeat questions already answered here. Ask only for missing information,
+one question at a time. Create the project outside the Orchestrator-Agent
+folder, implement the complete application, and run tests, lint, typecheck, and
+production build.
+------------------------
+Healthcare Prompt:
+
+Create a production-ready Angular healthcare management application for
+patients, doctors, appointments, medical records, prescriptions, billing,
+insurance, reports, and notifications.
+
+Use Angular standalone components, Angular Router, Angular Material, Signals,
+RxJS, strict TypeScript, JWT authentication, role-based access control, lazy
+loading, and responsive accessible UI.
+
+Use a REST API with typed DTOs and HttpClient services. Add protected routes for
+admins, doctors, staff, and patients. Include appointment booking, patient
+search, filtering, validation, loading states, empty states, error handling,
+and audit-friendly workflows.
+
+Read the complete prompt before asking questions. Do not repeat any information
+already provided. Ask only genuinely missing questions, one at a time. Create
+the project outside the Orchestrator-Agent folder and complete implementation
+and validation.
+---------------------------------
+Education Platform Prompt:
+
+Create a production-ready Angular education platform for students, teachers,
+courses, lessons, assignments, quizzes, grades, attendance, announcements, and
+reports.
+
+Use Angular standalone components, Angular Router, Angular Material, Signals,
+RxJS, strict TypeScript, OAuth2 authentication, lazy-loaded feature routes,
+and responsive accessible UI.
+
+Use mock JSON data with a service-based data layer. Include dashboards for
+students, teachers, and administrators; course enrollment; lesson progress;
+quiz submission; grade viewing; search; filtering; sorting; validation; and
+role-based navigation.
+
+Read the whole prompt first and reuse all supplied requirements. Do not ask
+repeated questions. Ask only for missing project or configuration information,
+one question at a time. Create the project outside the Orchestrator-Agent
+folder, implement all requested features, and run tests, lint, typecheck, and
+production build.
+
+-------------------------
+Finance Application Prompt:
+
+Create a production-ready Angular finance management application for accounts,
+transactions, invoices, payments, budgets, expenses, customers, approvals,
+and financial reports.
+
+Use Angular standalone components, Angular Router, Angular Material, Signals,
+RxJS, strict TypeScript, JWT authentication, multi-role RBAC, lazy loading,
+and responsive accessible UI.
+
+Use a REST API through typed HttpClient services. Add secure route guards,
+authorization-aware navigation, transaction filtering, invoice validation,
+approval workflows, dashboard summaries, loading states, empty states, error
+states, and audit information.
+
+Parse all requirements in this prompt before asking questions. Do not repeat
+answered questions. Ask only for genuinely missing values, one at a time.
+Create the project outside the Orchestrator-Agent folder and complete the
+implementation and validation workflow.
+-------------------
+Inventory and Warehouse Prompt:
+
+Create a production-ready Angular warehouse and inventory application for
+products, warehouses, stock levels, suppliers, purchase orders, shipments,
+receiving, barcode scanning, transfers, and reports.
+
+Use Angular standalone components, Angular Router, PrimeNG, Signals, RxJS,
+strict TypeScript, JWT authentication, lazy loading, and responsive accessible
+UI.
+
+Use a REST API with typed DTOs and HttpClient. Include stock search, filters,
+sorting, pagination, low-stock alerts, warehouse transfers, receiving
+validation, supplier management, loading/error/empty states, and admin-only
+operations.
+
+First read the entire prompt and conversation. Treat every explicit feature,
+technology, authentication method, and data-source choice as already answered.
+Never repeat a question. Ask only the first missing question and proceed to
+implementation once requirements are complete.
+---------------------
+Portfolio Website Prompt:
+
+Create a production-ready Angular portfolio website for displaying projects,
+case studies, skills, experience, testimonials, blog posts, and contact
+messages.
+
+Use Angular standalone components, Angular Router, Angular Material, Signals,
+strict TypeScript, responsive accessible UI, SEO-friendly metadata, animations
+with reduced-motion support, and a typed mock data service.
+
+Include project filtering, project detail routes, contact-form validation,
+success and error states, responsive navigation, accessible components, and a
+simple admin area for managing projects and posts.
+
+Read the complete request first. Do not ask questions that are already answered.
+Ask only for missing information, create the project outside the
+Orchestrator-Agent folder, and run lint, tests, typecheck, and production build.
+----------------
+Custom Application Template Prompt:
+
+Create a production-ready Angular application for [describe the domain].
+
+Application features:
+- [feature 1]
+- [feature 2]
+- [feature 3]
+- [feature 4]
+
+Use:
+- UI framework: [Angular Material / PrimeNG / Tailwind]
+- Data source: [Mock JSON / REST API / GraphQL / Database]
+- Authentication: [JWT / OAuth2 / RBAC / None]
+- State management: [Signals / RxJS / NgRx]
+- Project location: [path outside Orchestrator-Agent]
+
+Use Angular standalone components, Angular Router, strict TypeScript, lazy
+loading, responsive accessible UI, typed services, and feature-based folders.
+
+Read the complete prompt and conversation before asking questions. Store all
+values already provided, including application type, category, data source,
+state management, authentication, modules, project name, and project path.
+Never ask an already answered question. Ask only the first genuinely missing
+value, one question at a time.
+
+After requirements are complete, scaffold the project, implement all requested
+routes and features, add loading/error/empty/validation states, and run tests,
+lint, typecheck, and production build. Do not stop after installing Angular or
+a UI library.
+
+
+
+ 
+
+ 
