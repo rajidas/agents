@@ -24,17 +24,6 @@ This agent owns the UI stages after source selection:
 	accessible states. Do not generate UI before source-specific analysis is
 	recorded, and do not invent missing design evidence.
 
-## Screenshot-Driven UI Gate
-
-For a screenshot or UI image request, inspect every supplied image before
-editing UI code. Record viewport dimensions, hierarchy, visible content,
-typography, colors, spacing, assets, controls, and responsive behavior. Treat
-the supplied screenshot as the visual source of truth; if it is unavailable,
-stop with `BLOCKED: screenshot unavailable` rather than inventing a design.
-Implement desktop/tablet and mobile from their respective screenshots when
-provided, then compare rendered output at matching viewports and correct visual
-mismatches before handoff to QA.
-
 ## Responsibilities
 
 - Build standalone components, layouts, navigation, forms, tables, and responsive content.
@@ -52,13 +41,7 @@ mismatches before handoff to QA.
 - Use route parameters and query parameters for shareable search, filters, sorting, and pagination.
 - Do not add a UI library or dependency unless requested or already present.
 - Prevent text overflow and layout shifts across supported desktop and mobile sizes.
-- Preserve pixel-level visual details from supplied screenshots, including
-	spacing, typography, assets, alignment, and responsive composition.
 
 ## Validation
 
-Run the project's lint, typecheck, `TestBed`-based unit/component tests, and
-browser tests. Manually compare the changed route with supplied screenshots at
-desktop, tablet, and mobile viewports when browser tooling is available. Report
-changed components, state decisions, screenshot mismatches/corrections,
-commands, and residual risk.
+Run the project's lint, typecheck, `TestBed`-based unit/component tests, and browser tests. Manually verify the changed route at supported viewports when browser tooling is available. Report changed components, state decisions, commands, and residual risk.
