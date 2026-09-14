@@ -1,0 +1,27 @@
+Ecommerce-
+----------------------
+
+Create a dynamic production-ready Next.js ecommerce application for customers shopping products. Include product catalog, product details, search, filters, sorting, wishlist, cart, checkout, order tracking, and admin product management. Use TypeScript, App Router, Tailwind CSS, responsive design, realistic mock JSON data, reusable components, and working interactions. Do not leave placeholder pages. Run `npm run build` and fix errors.
+
+
+Healthcare -
+----------------------
+Create a dynamic production-ready Next.js healthcare application for managing patients and doctor appointments. Include dashboard, patient records, patient details, appointment booking, reports, search, filters, notifications, and admin management. Use TypeScript, App Router, Tailwind CSS, responsive design, realistic mock JSON data, reusable components, and working interactions. Do not leave placeholder pages. Run `npm run build` and fix errors.
+
+
+Technology / SaaS
+-------------------------------
+Create a dynamic production-ready Next.js Technology/SaaS application. Include landing page, features, pricing, authentication UI, dashboard, projects, team management, settings, search, filters, analytics, and notifications. Use TypeScript, App Router, Tailwind CSS, responsive design, realistic mock JSON data, reusable components, and working interactions. Do not leave placeholder pages. Run `npm run build` and fix errors.
+
+
+Portfolio
+-----------------
+Create a dynamic production-ready Next.js portfolio application for a professional. Include homepage, about page, project listing, project detail pages, skills, experience, testimonials, contact form, project filters, and responsive navigation. Use TypeScript, App Router, Tailwind CSS, realistic mock JSON data, reusable components, and working interactions. Do not leave placeholder pages. Run `npm run build` and fix errors.
+
+Blog 
+----------
+Create a dynamic production-ready Next.js blog application. Include homepage, article listing, article detail pages, categories, search, filters, sorting, pagination, author profiles, newsletter signup, and an admin content management UI. Use TypeScript, App Router, Tailwind CSS, responsive design, realistic mock JSON data, reusable components, and working interactions. Do not leave placeholder pages. Run `npm run build` and fix errors.
+
+Other
+-------------
+Create a dynamic production-ready Next.js application for [DESCRIBE YOUR DOMAIN AND PURPOSE]. First ask about the target users and required workflows. Then create the correct custom pages, navigation, dashboard, forms, search, filters, realistic mock JSON data, responsive UI, reusable components, and working interactions. Use TypeScript, App Router, and Tailwind CSS. Do not use an ecommerce template or leave placeholder pages. Run `npm run build` and fix errors.
