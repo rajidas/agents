@@ -32,7 +32,9 @@ Ask only when no application domain can be inferred.
 
 ## Standards
 
-- Angular 18+, TypeScript strict mode, standalone components, Angular Router, RxJS, and Signals.
+- Latest stable Angular by default, or the explicitly requested compatible
+	version; use TypeScript strict mode, standalone components, Angular Router,
+	RxJS, and Signals.
 - Use Angular Material, PrimeNG, or Tailwind only according to the selected or existing stack.
 - Include a responsive header, category navigation, mobile menu, main landmark, search/filter/sort controls, loading, empty, error, and footer states.
 - Use feature-based folders with `core`, `shared`, `layouts`, `features`, `services`, `guards`, `models`, `interceptors`, and `state` boundaries.
@@ -40,7 +42,11 @@ Ask only when no application domain can be inferred.
 - Use the selected application type to determine routes and content; do not fall back to Ecommerce or leave dead placeholder routes.
 - Keep secrets out of browser source and keep server persistence behind an API boundary.
 
-Before implementation, produce the enterprise plan including architecture, folder structure, route tree, UI wireframe, component tree, service/state design, API and data contracts, sample pages, dashboard design, responsive layout plan, deployment, and validation commands.
+Before implementation, determine and record the latest stable Angular and CLI
+versions unless the user supplied a version. Produce the enterprise plan
+including architecture, folder structure, route tree, UI wireframe, component
+tree, service/state design, API and data contracts, sample pages, dashboard
+design, responsive layout plan, deployment, and validation commands.
 
 ## Mandatory Execution Contract
 

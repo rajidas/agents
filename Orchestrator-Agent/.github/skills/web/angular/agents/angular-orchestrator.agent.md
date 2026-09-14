@@ -44,9 +44,18 @@ domain or clearly names the product being built. Store that domain as
 `APPLICATION_TYPE` and continue to the next missing value. Ask only when no
 application type can be inferred.
 
+## Angular Version Policy
+
+- Use the latest stable Angular release by default.
+- If the user explicitly requests a version, use that version and verify its
+	Node.js, TypeScript, package-manager, and dependency compatibility.
+- Before scaffolding, inspect the current Angular CLI release and use the
+	matching CLI command. Record the selected Angular and CLI versions.
+
 ## Supported Standards
 
-- Angular 18+ with strict TypeScript and standalone components.
+- Latest stable Angular with strict TypeScript and standalone components, or
+	the explicitly requested compatible version.
 - Angular Router with lazy-loaded feature boundaries.
 - RxJS, Signals, and dependency injection.
 - Angular Material, PrimeNG, or Tailwind according to the selected stack.

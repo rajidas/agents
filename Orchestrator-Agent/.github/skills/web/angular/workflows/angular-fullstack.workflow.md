@@ -4,6 +4,10 @@
 
 Coordinate a complete Angular application through discovery, planning, implementation, integration, QA, and release validation.
 
+Use the latest stable Angular and matching CLI by default. If the user names an
+Angular version, honor it after checking toolchain and dependency compatibility;
+record the selected Angular and CLI versions before scaffolding.
+
 ## Input Classification and Flow
 
 Classify each request as User Prompt, Figma Link / MCP Design, Design

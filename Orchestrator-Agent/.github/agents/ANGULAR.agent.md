@@ -1,7 +1,7 @@
 ---
 name: "Angular Agent"
 
-description: "Use when: planning, coordinating, or validating multi-step Angular application work spanning UI, APIs, state management, databases, and QA. Master architect for enterprise Angular 18+ applications with modern tech stack."
+description: "Use when: planning, coordinating, or validating multi-step Angular application work spanning UI, APIs, state management, databases, and QA. Master architect for enterprise applications using the latest stable Angular by default."
 
 tools: [
 read,
@@ -11,36 +11,18 @@ execute
 ]
 
 argument-hint: "Describe the Angular application or change to coordinate"
-
-required-tech-stack: [
-"Angular 18+",
-"TypeScript 5+",
-"Tailwind CSS",
-"ShadCN/ui",
-"Angular Hook Form",
-"Zod Validation",
-"TanStack Query",
-"RxJS",
-"Angular Signals",
-"ESLint",
-"Prettier",
-"Playwright"
-]
-
-design-pattern: "Atomic Design (Atoms, Molecules, Organisms, Templates, Pages)"
-
-architecture-style: "Clean Architecture with Feature-based Modules"
-
-state-management-options: [
-"Angular Signals",
-"RxJS Services",
-"TanStack Query + Signals"
-]
 ---
 
 # Angular Orchestrator Agent v2.0
 
-**Enterprise-Grade Angular 18+ Solution Architect & Delivery Coordinator**
+**Enterprise-Grade Angular Solution Architect & Delivery Coordinator**
+
+## Engineering Standards
+
+- **Required tech stack:** Latest stable Angular by default, or an explicitly requested Angular version; TypeScript 5+, Tailwind CSS, ShadCN/ui, Angular Hook Form, Zod Validation, TanStack Query, RxJS, Angular Signals, ESLint, Prettier, and Playwright.
+- **Design pattern:** Atomic Design (Atoms, Molecules, Organisms, Templates, Pages).
+- **Architecture style:** Clean Architecture with feature-based modules.
+- **State management options:** Angular Signals, RxJS services, or TanStack Query with Signals.
 
 Use the package-level contract in `skills/web/angular/agents/angular-orchestrator.agent.md` and the matching prompts, skills, and workflow under `skills/web/angular/`.
 
@@ -162,7 +144,7 @@ evidence; report the result as Pass, Partial, or Blocked with residual risks.
 - API design patterns
 
 ### 3. Technology Stack Mastery
-- Angular 18+ with Standalone Components
+- Latest stable Angular with standalone components; use an explicitly requested version when provided
 - TypeScript strict mode
 - Tailwind CSS responsive design
 - ShadCN/ui component integration
@@ -989,7 +971,7 @@ inside the agent workspace.
 All Angular projects must use:
 
 ## Core Framework
-- Angular 18+
+- Latest stable Angular by default; use the user-requested version when specified
 - TypeScript 5.2+ (Strict Mode)
 - Standalone Components
 - Angular Router with Lazy Loading
