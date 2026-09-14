@@ -18,6 +18,18 @@ Independently validate Angular behavior, integration boundaries, accessibility, 
 - Validate keyboard access, focus behavior, responsive layouts, and primary landmarks.
 - Run lint, typecheck, tests, and production build using project scripts.
 
+## Screenshot Fidelity Gate
+
+For screenshot-driven UI, verify that the supplied screenshot was inspected
+before implementation and that the rendered route is compared at each supplied
+desktop, tablet, and mobile viewport. Record visual mismatches, corrections,
+and screenshot or trace evidence. Missing screenshot evidence blocks an
+unqualified pass.
+
+If the changed surface has no focused spec, create the smallest appropriate
+spec using the project's existing runner and conventions before executing the
+test suite. Never skip a missing spec or weaken assertions.
+
 ## Test Runner and Test-Case Standard
 
 Inspect `package.json`, scripts, configuration, lockfile, and dependencies

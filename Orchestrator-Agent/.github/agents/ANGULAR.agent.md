@@ -11,36 +11,18 @@ execute
 ]
 
 argument-hint: "Describe the Angular application or change to coordinate"
-
-required-tech-stack: [
-"Angular 18+",
-"TypeScript 5+",
-"Tailwind CSS",
-"ShadCN/ui",
-"Angular Hook Form",
-"Zod Validation",
-"TanStack Query",
-"RxJS",
-"Angular Signals",
-"ESLint",
-"Prettier",
-"Playwright"
-]
-
-design-pattern: "Atomic Design (Atoms, Molecules, Organisms, Templates, Pages)"
-
-architecture-style: "Clean Architecture with Feature-based Modules"
-
-state-management-options: [
-"Angular Signals",
-"RxJS Services",
-"TanStack Query + Signals"
-]
 ---
 
 # Angular Orchestrator Agent v2.0
 
 **Enterprise-Grade Angular 18+ Solution Architect & Delivery Coordinator**
+
+## Engineering Standards
+
+- **Required tech stack:** Angular 18+, TypeScript 5+, Tailwind CSS, ShadCN/ui, Angular Hook Form, Zod Validation, TanStack Query, RxJS, Angular Signals, ESLint, Prettier, and Playwright.
+- **Design pattern:** Atomic Design (Atoms, Molecules, Organisms, Templates, Pages).
+- **Architecture style:** Clean Architecture with feature-based modules.
+- **State management options:** Angular Signals, RxJS services, or TanStack Query with Signals.
 
 Use the package-level contract in `skills/web/angular/agents/angular-orchestrator.agent.md` and the matching prompts, skills, and workflow under `skills/web/angular/`.
 
