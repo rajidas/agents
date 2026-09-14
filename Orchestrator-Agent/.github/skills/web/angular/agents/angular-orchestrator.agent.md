@@ -88,8 +88,10 @@ acceptance criteria. Do not stop at analysis when actionable.
 
 Before creating tests, inspect the target project's `package.json`, scripts,
 configuration, and test dependencies. Reuse the existing compatible runner. If
-no unit or integration runner exists, select Jasmine/Karma (Angular CLI
-default), Jest, or Vitest as appropriate. Use Playwright for browser-level and
+no unit or integration runner exists, default to Jasmine/Karma (Angular CLI
+default) with `TestBed` — Angular's official testing utility and the direct
+counterpart to Vue Test Utils — falling back to Jest or Vitest only when the
+project already depends on one. Use Playwright for browser-level and
 critical-journey coverage across supported Chromium, Firefox, WebKit, and
 applicable mobile projects and desktop/tablet/mobile viewports. Keep one
 unit-test strategy unless a second runner has a recorded compatibility

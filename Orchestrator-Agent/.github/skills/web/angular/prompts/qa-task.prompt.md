@@ -4,11 +4,12 @@ Validate the requested Angular change using `agents/angular-qa.agent.md` and `sk
 
 Inspect `package.json`, scripts, configuration, lockfile, and dependencies.
 Reuse the existing compatible Jasmine/Karma, Jest, Vitest, or other runner;
-when none exists, choose the Angular-compatible default and document it. Use
-Playwright for browser journeys. Create a test-case matrix mapping every
-acceptance criterion to a test ID, type, flow, expected result, command, and
-evidence. Cover success, validation boundaries, loading, empty, error,
-unauthorized, pending, security, and regression states.
+use Jasmine/Karma with `TestBed` (Angular CLI default, the direct counterpart
+to Vue Test Utils) when none exists. Use Playwright for browser journeys.
+Create a test-case matrix mapping every acceptance criterion to a test ID,
+type, flow, expected result, command, and evidence. Cover success, validation
+boundaries, loading, empty, error, unauthorized, pending, security, and
+regression states.
 
 Inspect the existing test runner, browser configuration, fixtures, scripts, and supported browsers. Cover the primary route and landmark, navigation, success behavior, and highest-risk loading, empty, error, invalid-input, unauthorized, pending, keyboard, and responsive states. Prefer role, label, text, and stable test-id locators; avoid arbitrary waits and generated selectors.
 

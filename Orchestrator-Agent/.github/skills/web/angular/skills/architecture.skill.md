@@ -43,4 +43,4 @@ Do not place database access, secrets, or server authorization in Angular code. 
 
 ## Validation
 
-Test route boundaries, service behavior, state transitions, mapping, errors, accessibility, and production builds. Preserve the selected state library and existing project style.
+Test route boundaries, service behavior, state transitions, mapping, errors, and accessibility with `TestBed`-based unit/component tests (Angular's counterpart to Vue Test Utils), plus production builds. Preserve the selected state library and existing project style.

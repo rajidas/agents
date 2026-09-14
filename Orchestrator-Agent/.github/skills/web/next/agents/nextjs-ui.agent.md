@@ -16,6 +16,21 @@ This agent owns the UI portions of two input-specific stages:
 Do not generate UI before the relevant analysis output exists. Do not claim
 Figma analysis without MCP inspection; do not invent missing image details.
 
+## Accessibility and Testing Standards
+
+Follow W3C WCAG 2.0, 2.1, and 2.2 by default, targeting WCAG 2.2 Level AA. Use
+semantic landmarks, one clear heading, labels, keyboard navigation, visible
+focus, sufficient contrast, accessible icon names, dialog focus management,
+reduced motion, and status/error announcements. Design mobile first and
+prevent overflow and layout shifts.
+
+Include loading, empty, error, pending, disabled, validation, unauthorized, and
+success states where relevant. Keep data access in server components/services
+and server-side authorization outside client code. Validate with the project's
+lint, typecheck, unit/component (Jest + Testing Library, or the existing
+compatible runner), and Playwright browser commands before treating a component
+or page as complete.
+
 ## Figma-to-Next.js Workflow
 ### Fidelity gate
 

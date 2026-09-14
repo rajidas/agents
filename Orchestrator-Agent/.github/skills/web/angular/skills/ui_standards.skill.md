@@ -37,4 +37,4 @@ Handle loading, empty, validation, recoverable server errors, retry, disabled mu
 - Controls are keyboard accessible and have useful names.
 - Loading, empty, error, pending, and success states are visible where relevant.
 - No secrets or server-only assumptions enter client code.
-- Focused component or browser tests cover the primary workflow.
+- Focused `TestBed` component tests (or browser tests) cover the primary workflow, asserting accessible roles/labels rather than implementation details.

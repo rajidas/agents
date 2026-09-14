@@ -100,12 +100,44 @@ impact, and technical analysis, including goals, flows, edge cases, validation,
 dependencies, risks, affected modules, assumptions, scope, and acceptance
 criteria traceability. Do not stop at analysis when the request is actionable.
 
-Default to W3C WCAG 2.0, 2.1, and 2.2, targeting WCAG 2.2 Level AA. Inspect
-the target project's runner and configuration; reuse Jasmine/Karma, Jest,
-Vitest, or another compatible runner, and document the choice. Use Playwright
-for browser journeys. Cover required states, acceptance criteria, regression,
-desktop/tablet/mobile viewports, and supported Chromium/Firefox/WebKit
-projects, reporting evidence and residual risk.
+## Testing Baseline
+
+Every implementation must include test cases appropriate to its changed
+surface. First inspect `package.json`, existing scripts, test configuration,
+and installed dependencies. Preserve a compatible project runner when one
+exists; otherwise use Jasmine/Karma (Angular CLI default), Jest, or Vitest for
+unit and integration tests, with TestBed for component/service/pipe/guard
+testing and `HttpClientTestingModule` for HTTP mocking. Use Playwright for
+browser and critical user-journey tests when browser behavior is involved. Do
+not introduce multiple unit-test runners without a documented reason.
+
+Test planning must cover the acceptance criteria, happy paths, validation and
+boundary cases, loading/pending, empty, error, unauthorized, and success
+states, plus regression coverage for affected behavior. Keep tests
+deterministic and isolated, mock external services at boundaries, and never
+weaken assertions just to make a test pass. Record commands, pass/fail
+results, coverage output, known gaps, and the mapping from each acceptance
+criterion to its test case.
+
+Browser validation must use the project's supported-browser policy and
+existing Playwright projects. Run critical journeys in supported Chromium,
+Firefox, and WebKit projects, plus mobile projects when mobile web is in
+scope. Validate critical routes at desktop, tablet, and narrow-mobile
+viewports for responsive navigation, forms, dialogs, tables, focus, text fit,
+overflow, touch targets, layout shifts, and horizontal scrolling. Record
+browser, viewport, result, and artifact evidence; never silently skip
+unsupported coverage.
+
+## Accessibility Conformance Baseline
+
+All generated or modified Angular UI must follow the applicable W3C Web
+Content Accessibility Guidelines (WCAG) versions 2.0, 2.1, and 2.2 by default.
+Use WCAG 2.2 Level AA as the primary implementation target, preserve
+applicable WCAG 2.0 and 2.1 success criteria, and identify any
+version-specific criteria that cannot be satisfied. Map accessibility
+acceptance criteria and QA evidence to the relevant WCAG version and success
+criterion. Do not claim conformance without automated and manual validation
+evidence; report the result as Pass, Partial, or Blocked with residual risks.
 
 ---
 
@@ -1014,31 +1046,21 @@ All Angular projects must use:
 - **Separation of Concerns**
 
 ## Testing Standards
-- **Unit Testing** (reuse the compatible project runner; Jasmine/Karma, Jest, or Vitest)
-  - Minimum 80% code coverage
-  - Service testing
-  - Component testing
-  - Pipe testing
-  - Guard testing
-- **Integration Testing**
-  - Feature module testing
-  - Service integration
-  - HTTP mocking
-- **E2E Testing** (Playwright/Cypress)
-  - User flow validation
-  - Critical paths
-  - Responsive testing
+
+See Testing Baseline above for the runner selection, coverage, and evidence
+requirements. Supplemental Angular-specific scope:
+- Service, component, pipe, and guard testing via TestBed
+- Feature module and service integration testing with HTTP mocking
+- Playwright (or Cypress where already adopted) for E2E user-flow and
+  responsive testing
 
 ## Accessibility (WCAG 2.0, 2.1, and 2.2; WCAG 2.2 Level AA target)
-- Semantic HTML
-- ARIA labels and roles
-- Keyboard navigation
-- Color contrast (WCAG AA minimum)
-- Focus management
-- Screen reader support
-- Alt text for images
-- Form accessibility
-- Accessible modals and dialogs
+
+See Accessibility Conformance Baseline above. Supplemental Angular-specific
+scope:
+- Semantic HTML, ARIA labels/roles, keyboard navigation, focus management
+- Color contrast (WCAG AA minimum), screen reader support, alt text
+- Accessible forms, modals, and dialogs
 
 ## Security Guardrails
 - No secrets in source code
@@ -1228,14 +1250,12 @@ error, validation, and unauthorized states where relevant.
 - 15% Integration Tests (feature flow, service integration)
 - 5% E2E Tests (critical user paths)
 
-**Unit Testing:**
-- Jasmine framework
-- Karma test runner
+**Unit Testing:** (see Testing Baseline for runner selection — reuse the
+project's existing runner; default to Jasmine/Karma for new Angular CLI
+projects)
 - Component testing with TestBed
 - Service testing with spies/mocks
-- Pipe testing
-- Guard testing
-- Directive testing
+- Pipe, guard, and directive testing
 
 **Integration Testing:**
 - Feature module integration
@@ -1243,15 +1263,15 @@ error, validation, and unauthorized states where relevant.
 - HTTP integration with HttpClientTestingModule
 - Data flow testing
 
-**E2E Testing:**
-- Playwright for modern E2E
-- Critical user flows
-- Navigation testing
-- Form submission testing
-- Authentication flows
-- Accessibility testing
+**E2E Testing:** (see Testing Baseline for browser/viewport coverage)
+- Playwright for critical user flows, navigation, form submission, and
+  authentication flows
+- Accessibility testing as part of E2E journeys
 
 ## Accessibility (WCAG 2.0, 2.1, and 2.2; WCAG 2.2 Level AA target)
+
+See Accessibility Conformance Baseline for the conformance requirement and
+evidence expectations.
 
 **Implementation Standards:**
 - Semantic HTML (button, nav, main, section)

@@ -27,4 +27,4 @@ Own state modeling, data flow, caching, and side effects for Angular features.
 
 ## Validation
 
-Test initial, loading, success, empty, failure, retry, cancellation, and mutation paths. Run lint, typecheck, unit tests, and the production build.
+Test initial, loading, success, empty, failure, retry, cancellation, and mutation paths with `TestBed`-based unit tests. Run lint, typecheck, unit tests, and the production build.

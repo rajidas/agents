@@ -28,4 +28,4 @@ Implement the client transport boundary between Angular features and external AP
 
 ## Validation
 
-Add focused tests for success, invalid responses, authentication failure, forbidden access, not-found, conflicts, and network/server failures as applicable. Run lint, typecheck, unit/integration tests, and build.
+Add focused `TestBed`/`HttpClientTestingModule` tests for success, invalid responses, authentication failure, forbidden access, not-found, conflicts, and network/server failures as applicable. Run lint, typecheck, unit/integration tests, and build.

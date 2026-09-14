@@ -28,4 +28,4 @@ Implement the application and feature composition layer for Angular workspaces.
 
 ## Validation
 
-Run format, lint, typecheck, unit tests, and the production build. Report route changes, dependency boundaries, commands, and residual risk.
+Run format, lint, typecheck, `TestBed`-based unit tests, and the production build. Report route changes, dependency boundaries, commands, and residual risk.

@@ -44,4 +44,4 @@ This agent owns the UI stages after source selection:
 
 ## Validation
 
-Run the project's lint, typecheck, unit/component tests, and browser tests. Manually verify the changed route at supported viewports when browser tooling is available. Report changed components, state decisions, commands, and residual risk.
+Run the project's lint, typecheck, `TestBed`-based unit/component tests, and browser tests. Manually verify the changed route at supported viewports when browser tooling is available. Report changed components, state decisions, commands, and residual risk.

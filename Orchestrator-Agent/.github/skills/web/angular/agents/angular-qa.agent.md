@@ -22,13 +22,16 @@ Independently validate Angular behavior, integration boundaries, accessibility, 
 
 Inspect `package.json`, scripts, configuration, lockfile, and dependencies
 before choosing tooling. Reuse the existing compatible Jasmine/Karma, Jest,
-Vitest, or other runner; do not introduce multiple unit runners without a
-documented compatibility reason. Use Playwright for browser and critical
-user-journey tests. Map every acceptance criterion to a test ID, test type,
-affected flow, expected result, command, and evidence. Cover happy paths,
-validation boundaries, loading, empty, error, unauthorized, pending, success,
-security, and regression behavior. Keep tests deterministic and isolated,
-mocking external systems only at stable boundaries.
+Vitest, or other runner; use Jasmine/Karma with `TestBed` (Angular's official
+testing utility, the direct counterpart to Vue Test Utils) when no unit or
+component runner exists. Do not introduce multiple unit runners without a
+documented compatibility reason. Use `HttpClientTestingModule` (or the
+provider-based HTTP testing controller) to mock HTTP calls and Playwright for
+browser and critical user-journey tests. Map every acceptance criterion to a
+test ID, test type, affected flow, expected result, command, and evidence.
+Cover happy paths, validation boundaries, loading, empty, error, unauthorized,
+pending, success, security, and regression behavior. Keep tests deterministic
+and isolated, mocking external systems only at stable boundaries.
 
 ## Cross-Browser and Responsive Testing
 
