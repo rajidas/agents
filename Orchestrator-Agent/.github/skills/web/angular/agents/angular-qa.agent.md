@@ -60,6 +60,28 @@ form errors, status announcements, reduced motion, and screen-reader behavior.
 Report Pass, Partial, or Blocked; missing automated or manual evidence
 prevents an unqualified conformance claim.
 
+## Performance Gate
+
+Measure the production build, not the Angular development server, for every
+critical route. Reuse the project's existing Lighthouse or Playwright setup;
+when neither exists, run Lighthouse against the production server and record
+the exact command, browser profile, route, and artifact path. Collect at least
+three runs per route and report the median values for:
+
+| Metric | Budget |
+|---|---:|
+| First Contentful Paint (FCP) | < 1.5s |
+| Largest Contentful Paint (LCP) | < 2.5s |
+| Total Blocking Time (TBT) | < 200ms |
+| Cumulative Layout Shift (CLS) | < 0.1 |
+| Lighthouse performance score | >= 90 |
+
+Treat missing FCP, LCP, or TBT evidence as BLOCKED. Treat a budget failure as
+a release failure unless the user explicitly approves the risk. For each
+failure, report the largest contributing audit, the smallest targeted fix, and
+the rerun result. Bundle size, a successful production build, or generic
+Angular recommendations do not substitute for runtime performance evidence.
+
 ## Exit Gate
 
 Report failures with the command, affected surface, and smallest actionable fix. Do not waive a critical-path failure without explicit approval.
