@@ -1,0 +1,33 @@
+Analyze and fix the Angular application's performance issues affecting FCP, LCP, and TBT.
+
+Requirements:
+1. Inspect the existing Angular version, routes, components, assets, dependencies, build configuration, and package scripts.
+2. Build and serve the production configuration. Do not use the development server for performance results.
+3. Measure the critical routes with Lighthouse using a fixed mobile profile.
+4. Run at least three Lighthouse samples per route and report median results for:
+   - FCP: < 1.5s
+   - LCP: < 2.5s
+   - TBT: < 200ms
+   - CLS: < 0.1
+   - Performance score: >= 90
+5. Identify the largest contributing audits before making changes.
+6. Optimize the root causes, prioritizing:
+   - Route lazy loading and code splitting
+   - Critical rendering path and above-the-fold content
+   - Image sizing, compression, lazy loading, and modern formats
+   - Fonts and third-party scripts
+   - Main-thread JavaScript and unnecessary change detection
+   - Bundle size and unused dependencies
+   - SSR or prerendering where appropriate
+   - Angular production budgets
+7. Make the smallest focused changes. Do not optimize based only on bundle size.
+8. Rebuild and rerun the same Lighthouse measurements.
+9. Continue until the budgets pass or clearly report the remaining blocker.
+10. Return:
+   - Baseline metrics
+   - Files changed
+   - Root causes found
+   - Fixes applied
+   - Final median metrics
+   - Lighthouse JSON/report artifact paths
+   - Remaining risks
