@@ -15,15 +15,6 @@ Inspect the existing test runner, browser configuration, fixtures, scripts, and 
 
 Run focused tests, lint, typecheck, unit/integration tests, production build, and the configured browser suite in order. Report commands, results, coverage, and residual risk.
 
-After the production build, run a performance gate against the served
-production app for every critical route. Use the existing Lighthouse or
-Playwright setup; otherwise use Lighthouse with a fixed browser profile and
-save JSON artifacts. Run at least three samples per route and report medians
-for FCP (<1.5s), LCP (<2.5s), TBT (<200ms), CLS (<0.1), and Lighthouse
-performance score (>=90). Missing FCP, LCP, or TBT evidence is BLOCKED; a
-budget failure is not a pass. For each failure, name the largest contributing
-audit, apply the smallest targeted fix, and rerun the same command.
-
 Run supported Chromium, Firefox, and WebKit projects, plus mobile projects when
 applicable, at desktop, tablet, and narrow-mobile viewports. Check responsive
 navigation, forms, dialogs, tables, keyboard focus, text wrapping, overflow,

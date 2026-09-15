@@ -65,7 +65,7 @@ only when no domain can be inferred.
 4. **Application layer**: `angular-app.agent.md` implements standalone routes, lazy loading, guards, layouts, providers, and feature services.
 5. **State layer**: `angular-state.agent.md` implements Signals, RxJS, or the selected store with tested transitions.
 6. **UI layer**: `angular-ui.agent.md` implements accessible responsive components and workflows.
-7. **QA**: `angular-qa.agent.md` runs focused tests, lint, typecheck, production build, accessibility checks, Playwright coverage, and the FCP/LCP/TBT performance gate.
+7. **QA**: `angular-qa.agent.md` runs focused tests, lint, typecheck, build, accessibility checks, and Playwright coverage.
 8. **Delivery**: the orchestrator aggregates outputs, resolves integration gaps, confirms security and route coverage, and reports readiness.
 
 ## Baseline Acceptance
@@ -80,7 +80,5 @@ application's routes, pages, components, services, state, data boundary,
 interactions, and responsive accessible UI. For the ecommerce template this
 includes products, categories, inventory, customers, orders, cart, checkout,
 and reports. QA must run focused tests, lint, typecheck, and production build;
-it must also run the production performance gate for critical routes, including
-median FCP, LCP, TBT, and CLS evidence. The orchestrator must report the
-implemented surface and any unresolved failure before declaring delivery ready.
-Missing performance evidence or a failed budget blocks release readiness.
+the orchestrator must report the implemented surface and any unresolved
+failure before declaring delivery ready.

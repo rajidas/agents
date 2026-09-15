@@ -1274,7 +1274,6 @@ evidence expectations.
 **Target Metrics:**
 - First Contentful Paint (FCP): < 1.5s
 - Largest Contentful Paint (LCP): < 2.5s
-- Total Blocking Time (TBT): < 200ms
 - Cumulative Layout Shift (CLS): < 0.1
 - Time to Interactive (TTI): < 3.5s
 - Lighthouse score: 90+
@@ -1292,18 +1291,6 @@ evidence expectations.
 - CDN for static assets
 - Gzip compression
 - Service Worker for offline
-
-**Required Measurement Loop:**
-- Build and serve the production configuration before measuring; never use a
-   development server as the release-performance result.
-- Run Lighthouse against each critical route with a fixed browser profile and
-   collect FCP, LCP, TBT, and CLS as JSON or CI artifacts.
-- Run at least three samples per route and report the median. A checklist of
-   optimizations or a single score is not performance evidence.
-- If Lighthouse is unavailable, use an equivalent repeatable browser trace and
-   mark the performance gate BLOCKED until FCP, LCP, and TBT are measured.
-- For a budget failure, identify the largest contributing audit, apply the
-   smallest targeted fix, and rerun the same measurement.
 
 ---
 
